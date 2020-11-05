@@ -11,3 +11,6 @@ server.get('/', (req, res) => {
 })
 
 module.exports = server
+
+// select *
+// from recipies
