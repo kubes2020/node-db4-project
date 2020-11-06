@@ -14,7 +14,7 @@ module.exports = {
         .where({'recipies.id':id})
     },
 
-    getRecipeSteps(id) {
+    getInstructions(id) {
         return db('recipies')
         .join('steps', 'recipies.id', 'steps.recipe_id')
         .select('recipies.recipe_name', 'steps.instruction')
